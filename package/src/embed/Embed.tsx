@@ -30,7 +30,7 @@ const Embed = ({ url }: Props) => {
             <p>site name</p>
           </div>
 
-          <div className="z-10 text-white">
+          <div className="relative z-10 text-white">
             <button
               onClick={(e) => {
                 e.preventDefault();
@@ -40,7 +40,10 @@ const Embed = ({ url }: Props) => {
               ...
             </button>
             {showOptions && (
-              <Options url="https://www.kindpng.com/imgv/iTTmxRm_white-globe-clip-art-at-clker-online-icon/" />
+              <Options
+                url="https://www.kindpng.com/imgv/iTTmxRm_white-globe-clip-art-at-clker-online-icon/"
+                setShowOptions={setShowOptions}
+              />
             )}
           </div>
         </div>
